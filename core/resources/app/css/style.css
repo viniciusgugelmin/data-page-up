@@ -1,24 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+/* CORE CLASSES */
+
 html {
     font-family: 'Roboto', sans-serif;
+    background: #003388;
 }
 
 body {
     height: 100vh;
     margin: 0px;
     display: grid;
-    grid-template-rows: 120px 1fr 60px;
+    grid-template-rows: 120px 90px 450px 120px;
     grid-template-columns: 1fr;
-    background-color: violet;
 }
 
-.cabecalho {
+header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10px;
-    z-index: 1;
-    color: teal;
+    transform: translateY(25px);
+    color: #ffffff
 }
+
+nav {
+    border: solid #ffffff;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    margin: 0 2.5rem;
+}
+
+section {
+    padding: 5rem;
+    background: #2288ff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CORE UTILITIES */
+
+.ul-nav {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
+
+.ul-nav li {
+    display: block;
+    height: auto;
+    background: #ffffff;
+    color: #000000;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    transition: 0.5s ease-in;
+}
+
+.ul-nav li:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+
+/* SECTIONS */
+
+
+/* Main section */
+
+#main-header {}
+
+#main-nav {
+    display: inline-flex;
+    background: #003388;
+}
+
+#main-section {
+    display: flex;
+    background: linear-gradient(180deg, rgba(0, 51, 136, 1) 0%, rgba(34, 136, 255, 1) 20%, rgba(34, 136, 255, 1) 80%, rgba(0, 51, 136, 1) 100%) !important;
+    background: #2288ff;
+}
+
+.conteudo {
+    display: block;
+}
+
+.conteudo ul {
+    border: 1px solid #44ccff;
+}
+
+
+/* Aluno section */
+
+
+/* Contato section */
+
+
+/* Utilities */
