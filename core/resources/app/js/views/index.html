@@ -8,17 +8,17 @@
     <title>index1 </title>
 </head>
 
-<body>
+<body bgcolor="#003388">
     <header id="main-header">
         <h1>Desenvolvimento Web 1</h1>
     </header>
     <nav id="main-nav">
         <ul class="ul-nav">
-            <li>Index</li>
-            <li>Aluno 1</li>
-            <li>Aluno 2</li>
-            <li>Aluno 3</li>
-            <li>Contato</li>
+            <a href="index.html">Index</a>
+            <a href="aluno1.html">Aluno 1</a>
+            <a href="aluno2.html">Aluno 2</a>
+            <a href="aluno3.html">Aluno 3</a>
+            <a href="contato.html">Contato</a>
         </ul>
     </nav>
     <section id="main-section">
@@ -102,20 +102,26 @@
 </html>
 <script>
 
+// Variável 1
 var aluno1 = { nome: "Vinícius Gugelmin", matricula: "2002137", email: "vinigugelmin@hotmail.com"}
 
+// Inserções no HTML - Variável 1
 document.getElementById("nome1").innerHTML = aluno1.nome;
 document.getElementById("matricula1").innerHTML = aluno1.matricula;
 document.getElementById("email1").innerHTML = aluno1.email;
 
+// Variável 2
 var aluno2 = { nome: "Lucas Rodrigues", matricula: "matricula", email: "vinigugelmin@hotmail.com"}
 
+// Inserções no HTML - Variável 2
 document.getElementById("nome2").innerHTML = aluno2.nome;
 document.getElementById("matricula2").innerHTML = aluno2.matricula;
 document.getElementById("email2").innerHTML = aluno2.email;
 
+// Variável 3
 var aluno3 = { nome: "Omar Pereira", matricula: "2002152", email: "omar.sedoski@hotmail.com"}
 
+// Inserções no HTML- Variável 3
 document.getElementById("nome3").innerHTML = aluno3.nome;
 document.getElementById("matricula3").innerHTML = aluno3.matricula;
 document.getElementById("email3").innerHTML = aluno3.email;
