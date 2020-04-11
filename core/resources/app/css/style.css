@@ -10,36 +10,47 @@ html {
 body {
     height: 100vh;
     margin: 0px;
-    display: grid;
-    grid-template-rows: 120px 90px 450px 120px;
-    grid-template-columns: 1fr;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(25px);
+    padding-top: 1rem;
     color: #ffffff
 }
 
 nav {
     border: solid #ffffff;
+    border-bottom: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-bottom: 0px;
     margin: 0 2.5rem;
+    height: 85px;
 }
 
 section {
-    padding: 5rem;
-    background: #2288ff;
+    padding: 0 5rem;
+    border: solid #ffffff;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+section h1 {
+    margin-bottom: 0;
+}
+
+section h2 {
+  font-weight: inherit;
+    margin-top: 0;
 }
 
 footer {
     display: flex;
+    padding-top: 2rem;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
 }
 
 
@@ -55,54 +66,66 @@ footer {
 
 .ul-nav li {
     display: block;
+    cursor: pointer;
     height: auto;
     background: #ffffff;
     color: #000000;
     font-weight: bolder;
+    border: 1px solid #ffffff;
     border-radius: 20px;
-    border: 1px solid #000000;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
-    transition: 0.5s ease-in;
+    transition: 0.25s ease-in;
 }
 
 .ul-nav li:hover {
-    background: #000000;
+    background: #234a8b;
     color: #ffffff;
 }
 
 
-/* SECTIONS */
+/* PAGES */
 
 
-/* Main section */
+/* Index */
 
 #main-header {}
 
 #main-nav {
-    display: inline-flex;
     background: #003388;
 }
 
 #main-section {
     display: flex;
-    background: linear-gradient(180deg, rgba(0, 51, 136, 1) 0%, rgba(34, 136, 255, 1) 20%, rgba(34, 136, 255, 1) 80%, rgba(0, 51, 136, 1) 100%) !important;
-    background: #2288ff;
+    background: #234a8b;
+    color: #ffffff;
+    font-size: 12px;
 }
 
 .conteudo {
     display: block;
+    flex-grow: 1;
+    border: 2px solid #ffffff;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    padding: 0 1rem;
+    margin: 1rem 0;
 }
 
-.conteudo ul {
-    border: 1px solid #44ccff;
+.conteudo:last-child {
+  border-right: 0;
+}
+
+.conteudo ul li {
+  display: block;
 }
 
 
-/* Aluno section */
+/* Aluno */
 
 
-/* Contato section */
+/* Contato */
 
 
 /* Utilities */
