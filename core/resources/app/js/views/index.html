@@ -25,58 +25,72 @@
         <div class="conteudo">
             <ul>
                 <li>
-                    <h1>texto</h1><br/> texto
+                    <h1>Tema:</h1>
+                    <h2>HTML e CSS</h2>
                 </li>
                 <li>
-                    <h1>texto</h1><br/> texto
+                    <h1>Entrega:</h1>
+                    <h2>13/04/2020</h2>
                 </li>
                 <li>
-                    <h1>texto</h1><br/> texto
+                    <h1>Horário:</h1>
+                    <h2>22h00</h2>
                 </li>
                 <li>
-                    <h1>texto</h1><br/> texto
+                    <h1>Máximo de alunos:</h1>
+                    <h2>3</h2>
                 </li>
                 <li>
-                    <h1>texto</h1><br/> texto
-                </li>
-            </ul>
-        </div>
-        <div class="conteudo bl-1">
-            <ul>
-                <li>
-                    <h1>texto</h1><br/> texto
-                </li>
-                <li>
-                    <h1>texto</h1><br/> texto
-                </li>
-                <li>
-                    <h1>texto</h1><br/> texto
+                    <h1>Valor:</h1>
+                    <h2>2,0 pontos</h2>
                 </li>
             </ul>
         </div>
-        <div class="conteudo bl-1">
+        <div class="conteudo">
             <ul>
                 <li>
-                    <h1>texto</h1><br/> texto
+                    <h1>Aluno:</h1>
+                    <h2 id="nome1"></h2>
                 </li>
                 <li>
-                    <h1>texto</h1><br/> texto
+                    <h1>Matrícula:</h1>
+                    <h2 id="matricula1"></h2>
                 </li>
                 <li>
-                    <h1>texto</h1><br/> texto
+                    <h1>E-mail:</h1>
+                    <h2 id="email1"></h2>
                 </li>
             </ul>
-        </div>
-        <div class="conteudo bl-1">
+          </div>
+          <div class="conteudo">
             <ul>
                 <li>
-                    <h1>texto</h1><br/> texto
+                    <h1>Aluno:</h1>
+                    <h2 id="nome2"></h2>
                 </li>
                 <li>
-                    <h1>texto</h1><br/> texto
+                    <h1>Matrícula:</h1>
+                    <h2 id="matricula2"></h2>
                 </li>
                 <li>
-                    <h1>texto</h1><br/> texto
+                    <h1>E-mail:</h1>
+                    <h2 id="email2"></h2>
+                </li>
+            </ul>
+          </div>
+          <div class="conteudo">
+            <ul>
+                <li>
+                    <h1>Aluno:</h1>
+                    <h2 id="nome3"></h2>
+                </li>
+                <li>
+                    <h1>Matrícula:</h1>
+                    <h2 id="matricula3"></h2>
+                </li>
+                <li>
+                    <h1>E-mail:</h1>
+                    <h2 id="email3"></h2>
                 </li>
             </ul>
         </div>
@@ -85,5 +99,25 @@
         &copy; Desenvolvido por Vinícius Gugelmin, Lucas Rodrigues, Omar Pereira - 2020
     </footer>
 </body>
-
 </html>
+<script>
+
+var aluno1 = { nome: "Vinícius Gugelmin", matricula: "2002137", email: "vinigugelmin@hotmail.com"}
+
+document.getElementById("nome1").innerHTML = aluno1.nome;
+document.getElementById("matricula1").innerHTML = aluno1.matricula;
+document.getElementById("email1").innerHTML = aluno1.email;
+
+var aluno2 = { nome: "Lucas Rodrigues", matricula: "matricula", email: "vinigugelmin@hotmail.com"}
+
+document.getElementById("nome2").innerHTML = aluno2.nome;
+document.getElementById("matricula2").innerHTML = aluno2.matricula;
+document.getElementById("email2").innerHTML = aluno2.email;
+
+var aluno3 = { nome: "Omar Pereira", matricula: "2002152", email: "omar.sedoski@hotmail.com"}
+
+document.getElementById("nome3").innerHTML = aluno3.nome;
+document.getElementById("matricula3").innerHTML = aluno3.matricula;
+document.getElementById("email3").innerHTML = aluno3.email;
+
+</script>
