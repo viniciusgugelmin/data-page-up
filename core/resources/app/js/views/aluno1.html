@@ -8,7 +8,7 @@
     <title>index1 </title>
 </head>
 
-<body>
+<body bgcolor="#ffffff">
     <header id="aluno-header">
         <h1>Desenvolvimento Web 1</h1>
     </header>
@@ -22,14 +22,162 @@
         </ul>
     </nav>
     <section id="aluno-section">
-        <div class="aluno-aside">LATERAL</div>
-        <div>
-          <div class="aluno-e">CIMA</div>
-          <div class="aluno-x">BAIXO</div>
+        <div class="aluno-child-1">
+          <div class="img">
+            <img src="../../../../../public_html/desweb1_public/images/a.png" alt="" />
+          </div>
+          <ul>
+              <li>
+                  <h1>Nome:</h1>
+                  <h2 id="nome"></h2>
+              </li>
+              <li>
+                  <h1>Nascimento:</h1>
+                  <h2 id="nascimento"></h2>
+              </li>
+              <li>
+                  <h1>Telefone:</h1>
+                  <h2 id="telefone"></h2>
+              </li>
+              <li>
+                  <h1>E-mail:</h1>
+                  <h2 id="email"></h2>
+              </li>
+              <li>
+                  <h1>Estado Civil:</h1>
+                  <h2 id="estado"></h2>
+              </li>
+          </ul>
+        </div>
+        </div>
+        <div class="aluno-child-2">
+          <div class="aluno-child-2-1">
+            <h1 class="aluno-child-titulo">Educação</h1>
+            <div class="aluno-child-conteudo">
+              <ul>
+                  <li>
+                      <h1>Ensino Médio</h1>
+                  </li>
+                  <li>
+                      <h2>TECPUC</h2>
+                  </li>
+                  <li>
+                      Técnico em Informática
+                  </li>
+                  <li>
+                      2016 - 2019
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Graduação</h1>
+                  </li>
+                  <li>
+                      <h2>Universidade Positivo</h2>
+                  </li>
+                  <li>
+                      Bacharelado em Sistemas de Informação
+                  </li>
+                  <li>
+                      2019 - presente data
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Especialização</h1>
+                  </li>
+                  <li>
+                      <h2>Não definido</h2>
+                  </li>
+                  <li>
+                      Não definido
+                  </li>
+                  <li>
+                      Não definido
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Mestrado</h1>
+                  </li>
+                  <li>
+                      <h2>Não definido</h2>
+                  </li>
+                  <li>
+                      Não definido
+                  </li>
+                  <li>
+                      Não definido
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <div class="aluno-child-2-2">
+            <h1 class="aluno-child-titulo">Experiência</h1>
+            <div class="aluno-child-conteudo">
+              <ul>
+                  <li>
+                      <h1>Instrutor de Informática - Estágio</h1>
+                  </li>
+                  <li>
+                      <h2>SEDUC - Informática</h2>
+                  </li>
+                  <li>
+                      7 meses
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Desenvolvedor Web - Estágio</h1>
+                  </li>
+                  <li>
+                      <h2>Post Empreendimentos Digitais</h2>
+                  </li>
+                  <li>
+                      8 meses
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Desenvolvedor Web Jr.</h1>
+                  </li>
+                  <li>
+                      <h2>Post Empreendimentos Digitais</h2>
+                  </li>
+                  <li>
+                      Ocupação atual
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Designer Gráfico - Freelancer</h1>
+                  </li>
+                  <li>
+                      <h2>Virtual G</h2>
+                  </li>
+                  <li>
+                      Ocupação atual
+                  </li>
+              </ul>
+            </div>
+          </div>
         </div>
     </section>
-    <footer>
+    <footer id="aluno-footer">
         &copy; Desenvolvido por Vinícius Gugelmin, Lucas Rodrigues, Omar Pereira - 2020
     </footer>
 </body>
 </html>
+<script>
+
+// Variável conteúdo
+var conteudo = { nome: "Vinícius Gugelmin", nascimento: "17/09/2001", telefone: "(41) 99834-4634", email: "vinigugelmin@hotmail.com", estado: "Solteiro"}
+
+// Inserções no HTML - conteúdo
+document.getElementById("nome").innerHTML = conteudo.nome;
+document.getElementById("nascimento").innerHTML = conteudo.nascimento;
+document.getElementById("telefone").innerHTML = conteudo.telefone;
+document.getElementById("email").innerHTML = conteudo.email;
+document.getElementById("estado").innerHTML = conteudo.estado;
+
+</script>
