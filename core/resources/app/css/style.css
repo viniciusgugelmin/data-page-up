@@ -4,6 +4,12 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+    background: #003388;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
     animation: loading 1.5s;
 }
 
@@ -18,17 +24,12 @@ html {
     }
 }
 
-body {
-    height: 100vh;
-    margin: 0px;
-}
-
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 1rem;
-    color: #ffffff
+    color: #ffffff;
 }
 
 nav {
@@ -143,6 +144,10 @@ footer {
 
 /* Aluno */
 
+#aluno-header {
+    background: #003388;
+}
+
 #aluno-nav {
     background: #ffffff;
 }
@@ -158,8 +163,136 @@ footer {
     color: #ffffff;
 }
 
+#aluno-section {
+    display: flex;
+    padding: 1.5rem 1rem !important;
+    padding: 0;
+    background: #ffffff;
+    color: #000000;
+    font-size: 12px;
+    border-color: #234a8b;
+}
+
+.img img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-color: #bbbbbb;
+}
+
+.aluno-child-1 {
+    flex-grow: 1;
+    padding: 0 5rem 1rem 5rem;
+    text-align: center;
+}
+
+.aluno-child-1 ul {
+    padding: 0;
+}
+
+.aluno-child-1 ul li {
+    display: block;
+}
+
+.aluno-child-2 {
+    padding-left: 1rem;
+    flex-grow: 3;
+    border: 2px solid #234a8b;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.aluno-child-2-1 {
+  border: 2px solid #234a8b;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.aluno-child-titulo {
+  padding-bottom: 1rem;
+  border: 1px solid #000000;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  display: block;
+  font-weight: bold;
+}
+
+.aluno-child-conteudo {
+  display: flex;
+}
+
+.aluno-child-conteudo h1 {
+  color: #234a8b;
+  margin-bottom: 1.5rem;
+}
+
+.aluno-child-conteudo h2 {
+  color: #000000;
+  margin: 0;
+}
+
+.aluno-child-conteudo ul {
+  flex-grow: 1;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+
+.aluno-child-conteudo li {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.aluno-child-conteudo ul li:last-child {
+    opacity: 0.75;
+}
+
+#aluno-footer {
+  background: #ffffff;
+  color: #000000;
+}
+
 
 /* Contato */
 
 
 /* Utilities */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a7be7;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2564cd;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #2564cd;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
