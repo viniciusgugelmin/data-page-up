@@ -3,8 +3,8 @@
 /* CORE CLASSES */
 
 html {
-    font-family: 'Roboto', sans-serif;
     background: #003388;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -26,19 +26,20 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     padding-top: 1rem;
+    background: #003388;
     color: #ffffff;
 }
 
 nav {
+    height: 85px;
+    margin: 0 2.5rem;
     border: solid #ffffff;
     border-bottom: 0px;
     border-left: 0px;
     border-right: 0px;
-    margin: 0 2.5rem;
-    height: 85px;
 }
 
 section {
@@ -53,8 +54,8 @@ section h1 {
 }
 
 section h2 {
-  font-weight: inherit;
     margin-top: 0;
+    font-weight: inherit;
 }
 
 footer {
@@ -63,8 +64,6 @@ footer {
     padding-bottom: 2rem;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
-    background: #003388;
 }
 
 
@@ -80,8 +79,8 @@ footer {
 
 .ul-nav a {
     display: block;
-    cursor: pointer;
     height: auto;
+    cursor: pointer;
     text-decoration: none;
     font-weight: bolder;
     border-radius: 20px;
@@ -95,10 +94,6 @@ footer {
 
 
 /* Index */
-
-#main-header {
-    background: #003388;
-}
 
 #main-nav {
     background: #003388;
@@ -134,19 +129,20 @@ footer {
 }
 
 .conteudo:last-child {
-  border-right: 0;
+    border-right: 0;
 }
 
 .conteudo ul li {
-  display: block;
+    display: block;
+}
+
+#main-footer {
+    color: #ffffff;
+    background: #003388;
 }
 
 
 /* Aluno */
-
-#aluno-header {
-    background: #003388;
-}
 
 #aluno-nav {
     background: #ffffff;
@@ -165,7 +161,7 @@ footer {
 
 #aluno-section {
     display: flex;
-    padding: 1.5rem 1rem !important;
+    padding: 1.5rem 0 1.5rem 1rem !important;
     padding: 0;
     background: #ffffff;
     color: #000000;
@@ -173,13 +169,26 @@ footer {
     border-color: #234a8b;
 }
 
-.img img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  background-color: #bbbbbb;
+.img {
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-color: #bbbbbb;
+}
+
+#img-vinicius {
+    background-image: url("../../../../public_html/desweb1_public/images/vinicius.JPG");
+}
+
+#img-lucas {
+    background-image: url("../../../../public_html/desweb1_public/images/lucas.JPG");
+}
+
+#img-omar {
+    background-image: url("../../../../public_html/desweb1_public/images/omar.JPG");
 }
 
 .aluno-child-1 {
@@ -206,41 +215,41 @@ footer {
 }
 
 .aluno-child-2-1 {
-  border: 2px solid #234a8b;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
+    border: 2px solid #234a8b;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 }
 
 .aluno-child-titulo {
-  padding-bottom: 1rem;
-  border: 1px solid #000000;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  display: block;
-  font-weight: bold;
+    padding-bottom: 1rem;
+    border: 1px solid #000000;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    display: block;
+    font-weight: bold;
 }
 
 .aluno-child-conteudo {
-  display: flex;
+    display: flex;
 }
 
 .aluno-child-conteudo h1 {
-  color: #234a8b;
-  margin-bottom: 1.5rem;
+    color: #234a8b;
+    margin-bottom: 1.5rem;
 }
 
 .aluno-child-conteudo h2 {
-  color: #000000;
-  margin: 0;
+    color: #000000;
+    margin: 0;
 }
 
 .aluno-child-conteudo ul {
-  flex-grow: 1;
-  flex-grow: 1;
-  margin-bottom: 1.5rem;
-  padding: 0;
+    flex-grow: 1;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+    padding: 0;
 }
 
 .aluno-child-conteudo li {
@@ -253,16 +262,12 @@ footer {
 }
 
 #aluno-footer {
-  background: #ffffff;
-  color: #000000;
+    background: #ffffff;
+    color: #000000;
 }
 
 
 /* Contato */
-
-#contato-header {
-    background: #003388;
-}
 
 #contato-nav {
     background: #ffffff;
@@ -290,8 +295,8 @@ footer {
 }
 
 form {
-  width: 500px;
-  margin: auto;
+    width: 500px;
+    margin: auto;
 }
 
 #contato-section label {
@@ -335,25 +340,73 @@ form {
 }
 
 .button {
-	background-color:#234a8b;
-  width: 101%;
-	border-radius:10px;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:15px;
-	padding: 9px 23px;
-  transition: 0.25s ease-in;
+  	background-color:#234a8b;
+    width: 101%;
+  	border-radius:10px;
+  	cursor:pointer;
+  	color:#ffffff;
+  	font-size:15px;
+  	padding: 9px 23px;
+    transition: 0.25s ease-in;
 }
 
 .button:hover {
-	background-color: #3a7be7;
+	  background-color: #3a7be7;
 }
 
 #contato-footer {
-  background: #ffffff;
-  color: #000000;
+    background: #ffffff;
+    color: #000000;
 }
 
+/* Mensagem */
+
+#mensagem-nav {
+    background: #ffffff;
+}
+
+#mensagem-nav .ul-nav a {
+    background: #ffffff;
+    color: #234a8b;
+    border: 1px solid #234a8b;
+}
+
+#mensagem-nav .ul-nav a:hover {
+    background: #234a8b;
+    color: #ffffff;
+}
+
+#mensagem-section {
+    display: flex;
+    padding: 1.5rem 1rem !important;
+    padding: 0;
+    background: #ffffff;
+    color: #000000;
+    font-size: 12px;
+    border-color: #234a8b;
+}
+
+#mensagem-section ul {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+#mensagem-section ul li {
+    display: block;
+}
+
+#mensagem-section ul li::before {
+    content: attr(id) ": ";
+    color: #234a8b;
+    font-weight: bold;
+}
+
+#mensagem-footer {
+    background: #ffffff;
+    color: #000000;
+}
 
 /* Utilities */
 
