@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <title>index1 </title>
+</head>
+
+<body bgcolor="#ffffff">
+    <header id="aluno-header">
+        <h1>Desenvolvimento Web 1</h1>
+    </header>
+    <nav id="aluno-nav">
+        <ul class="ul-nav">
+            <a href="index.html">Index</a>
+            <a href="aluno1.html">Aluno 1</a>
+            <a href="aluno2.html">Aluno 2</a>
+            <a href="aluno3.html">Aluno 3</a>
+            <a href="contato.html">Contato</a>
+        </ul>
+    </nav>
+    <section id="aluno-section">
+        <div class="aluno-child-1">
+          <div id="img-lucas" class="img"></div>
+          <ul>
+              <li>
+                  <h1>Nome:</h1>
+                  <h2 id="nome"></h2>
+              </li>
+              <li>
+                  <h1>Nascimento:</h1>
+                  <h2 id="nascimento"></h2>
+              </li>
+              <li>
+                  <h1>Telefone:</h1>
+                  <h2 id="telefone"></h2>
+              </li>
+              <li>
+                  <h1>E-mail:</h1>
+                  <h2 id="email"></h2>
+              </li>
+              <li>
+                  <h1>Estado Civil:</h1>
+                  <h2 id="estado"></h2>
+              </li>
+          </ul>
+        </div>
+        <div class="aluno-child-2">
+          <div class="aluno-child-2-1">
+            <h1 class="aluno-child-titulo">Educação</h1>
+            <div class="aluno-child-conteudo">
+              <ul>
+                  <li>
+                      <h1>Ensino Médio</h1>
+                  </li>
+                  <li>
+                      <h2>Colégio Estadual Professor Júlio Szymanski</h2>
+                  </li>
+                  <li>
+                      2013 - 2016
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Técnico</h1>
+                  </li>
+                  <li>
+                      <h2>Smart Telecom</h2>
+                  </li>
+                  <li>
+                      Microeletrônica e Análise de Software Emmc
+                  </li>
+                  <li>
+                      2015 - 2017
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Graduação</h1>
+                  </li>
+                  <li>
+                      <h2>Universidade Positivo</h2>
+                  </li>
+                  <li>
+                      Bacharelado em Sistemas de Informação
+                  </li>
+                  <li>
+                      2019 - presente data
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <div class="aluno-child-2-2">
+            <h1 class="aluno-child-titulo">Experiência</h1>
+            <div class="aluno-child-conteudo">
+              <ul>
+                  <li>
+                      <h1>Técnico em Eletrônica e Software</h1>
+                  </li>
+                  <li>
+                      <h2>Dispositivos Móveis LLCELL</h2>
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Vendedor</h1>
+                  </li>
+                  <li>
+                      <h2>TRK Componentes Eletrônicos</h2>
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Vendedor</h1>
+                  </li>
+                  <li>
+                      <h2>Mega Infotronic</h2>
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Auxiliar Almoxarifado</h1>
+                  </li>
+                  <li>
+                      <h2>Infotron</h2>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer id="aluno-footer">
+        &copy; Desenvolvido por Vinícius Gugelmin, Lucas Rodrigues, Omar Pereira - 2020
+    </footer>
+</body>
+</html>
+<script>
+
+// Variável conteúdo
+var conteudo = { nome: "Lucas Rodrigues", nascimento: "31/10/1994", telefone: "(41) 98400-3888", email: "lucasgsmdev@gmail.com", estado: "Solteiro"}
+
+// Inserções no HTML - conteúdo
+document.getElementById("nome").innerHTML = conteudo.nome;
+document.getElementById("nascimento").innerHTML = conteudo.nascimento;
+document.getElementById("telefone").innerHTML = conteudo.telefone;
+document.getElementById("email").innerHTML = conteudo.email;
+document.getElementById("estado").innerHTML = conteudo.estado;
+
+</script>
