@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <title>index1 </title>
+</head>
+
+<body bgcolor="#ffffff">
+    <header id="aluno-header">
+        <h1>Desenvolvimento Web 1</h1>
+    </header>
+    <nav id="aluno-nav">
+        <ul class="ul-nav">
+            <a href="index.html">Index</a>
+            <a href="aluno1.html">Aluno 1</a>
+            <a href="aluno2.html">Aluno 2</a>
+            <a href="aluno3.html">Aluno 3</a>
+            <a href="contato.html">Contato</a>
+        </ul>
+    </nav>
+    <section id="aluno-section">
+        <div class="aluno-child-1">
+          <div id="img-omar" class="img"></div>
+          <ul>
+              <li>
+                  <h1>Nome:</h1>
+                  <h2 id="nome"></h2>
+              </li>
+              <li>
+                  <h1>Nascimento:</h1>
+                  <h2 id="nascimento"></h2>
+              </li>
+              <li>
+                  <h1>Telefone:</h1>
+                  <h2 id="telefone"></h2>
+              </li>
+              <li>
+                  <h1>E-mail:</h1>
+                  <h2 id="email"></h2>
+              </li>
+              <li>
+                  <h1>Estado Civil:</h1>
+                  <h2 id="estado"></h2>
+              </li>
+          </ul>
+        </div>
+        <div class="aluno-child-2">
+          <div class="aluno-child-2-1">
+            <h1 class="aluno-child-titulo">Educação</h1>
+            <div class="aluno-child-conteudo">
+              <ul>
+                  <li>
+                      <h1>Ensino Médio</h1>
+                  </li>
+                  <li>
+                      <h2>Colégio Positivo</h2>
+                  </li>
+                  <li>
+                      2001 - 2004
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Graduação</h1>
+                  </li>
+                  <li>
+                      <h2>Faculdade FAE Business School</h2>
+                  </li>
+                  <li>
+                      Ciências Contábeis
+                  </li>
+                  <li>
+                      2006 - 2009
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Pós-Graduação</h1>
+                  </li>
+                  <li>
+                      <h2>Escola Superior Aberta do Brasil</h2>
+                  </li>
+                  <li>
+                      Controladoria e Finanças
+                  </li>
+                  <li>
+                      2011 - 2013
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Graduação</h1>
+                  </li>
+                  <li>
+                      <h2>Universidade Positivo</h2>
+                  </li>
+                  <li>
+                      Bacharelado em Sistemas de Informação
+                  </li>
+                  <li>
+                      2019 - presente data
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <div class="aluno-child-2-2">
+            <h1 class="aluno-child-titulo">Experiência</h1>
+            <div class="aluno-child-conteudo">
+              <ul>
+                  <li>
+                      <h1>Especialista na área Fiscal-Tributária - Trainee</h1>
+                  </li>
+                  <li>
+                      <h2>PWC</h2>
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Contador</h1>
+                  </li>
+                  <li>
+                      <h2>Paula Associados</h2>
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <h1>Analista de Contabilidade</h1>
+                  </li>
+                  <li>
+                      <h2>FOZPREV</h2>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer id="aluno-footer">
+        &copy; Desenvolvido por Vinícius Gugelmin, Lucas Rodrigues, Omar Pereira - 2020
+    </footer>
+</body>
+</html>
+<script>
+
+// Variável conteúdo
+var conteudo = { nome: "Omar Pereira", nascimento: "31/05/1987", telefone: "(45) 99923-6526", email: "omar.sedoski@hotmail.com", estado: "Divorciado"}
+
+// Inserções no HTML - conteúdo
+document.getElementById("nome").innerHTML = conteudo.nome;
+document.getElementById("nascimento").innerHTML = conteudo.nascimento;
+document.getElementById("telefone").innerHTML = conteudo.telefone;
+document.getElementById("email").innerHTML = conteudo.email;
+document.getElementById("estado").innerHTML = conteudo.estado;
+
+</script>
