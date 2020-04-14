@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <title>index1 </title>
+</head>
+
+<body bgcolor="#ffffff">
+    <header id="mensagem-header">
+        <h1>Desenvolvimento Web 1</h1>
+    </header>
+    <nav id="mensagem-nav">
+        <ul class="ul-nav">
+            <a href="index.html">Index</a>
+            <a href="aluno1.html">Aluno 1</a>
+            <a href="aluno2.html">Aluno 2</a>
+            <a href="aluno3.html">Aluno 3</a>
+            <a href="contato.html">Contato</a>
+        </ul>
+    </nav>
+    <section id="mensagem-section">
+      <ul>
+        <li id="Nome"></li>
+        <li id="E-mail"></li>
+        <li id="Telefone"></li>
+        <li id="Prioridade"></li>
+        <li id="Mensagem"></li>
+      </ul>
+    </section>
+    <footer id="mensagem-footer">
+        &copy; Desenvolvido por Vinícius Gugelmin, Lucas Rodrigues, Omar Pereira - 2020
+    </footer>
+</body>
+</html>
+<script>
+
+var urlParams = new URLSearchParams(window.location.search);
+
+document.getElementById('Nome').innerHTML = urlParams.get('nome');
+document.getElementById('E-mail').innerHTML = urlParams.get('email');
+document.getElementById('Telefone').innerHTML = urlParams.get('telefone');
+document.getElementById('Prioridade').innerHTML = urlParams.get('prioridade');
+document.getElementById('Mensagem').innerHTML = urlParams.get('mensagem');
+</script>
