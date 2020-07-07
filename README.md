@@ -1,4 +1,4 @@
-# Trabalho em grupo - Desenvolvimento Web
-## (1º Bimestre - Universidade Positivo) 
+# Group Work - Web Development
+## (1st Bimester - Positivo University)
 
-> Página desenvolvida para a matéria de Desenvolvimento Web 1 do Professor Diego Deconto. Alunos contribuintes: Vinícius Gugelmin, Lucas Rodrigues Leite, Omar Pereira Sedoski.
+> Students data page. Contributing students: Vinícius Gugelmin, Lucas Rodrigues Leite, Omar Pereira Sedoski.
